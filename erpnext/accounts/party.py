@@ -1007,7 +1007,7 @@ def get_default_contact(doctype: str, name: str) -> str | None:
 		],
 		or_filters=[
 			["is_primary_contact", "=", 1],
-			["is_billing_contact", "=", 1],
+			# ["is_billing_contact", "=", 1],
 		],
 		pluck="name",
 		limit=1,
